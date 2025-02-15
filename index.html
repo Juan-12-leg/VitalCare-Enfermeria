@@ -281,7 +281,111 @@
             .service-card {
                 padding: 1.5rem;
             }
+            .contacto-juan {
+            font-family: 'Poppins', sans-serif;
+            background: #0a0f0a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
+
+        /* Contenedor del formulario */
+        .contact-form-container {
+            max-width: 500px;
+            padding: 30px;
+            background: rgba(15, 30, 15, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 255, 128, 0.3);
+            border: 1px solid rgba(0, 255, 128, 0.5);
+            text-align: center;
+        }
+
+        /* Título */
+        .section-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #00ff80;
+            text-shadow: 0 0 10px #00ff80;
+        }
+
+        /* Grupo de entrada */
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #00ff80;
+        }
+
+        /* Campos de entrada */
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: #00ff80;
+            font-size: 16px;
+            border-radius: 5px;
+            outline: none;
+            transition: 0.3s;
+            box-shadow: inset 0px 0px 5px rgba(0, 255, 128, 0.5);
+        }
+
+        .input-group input:focus,
+        .input-group textarea:focus {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: inset 0px 0px 10px rgba(0, 255, 128, 0.8);
+        }
+
+        /* Botón de enviar */
+        .submit-btn {
+            background: linear-gradient(90deg, #00ff80, #008040);
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+            box-shadow: 0px 0px 10px rgba(0, 255, 128, 0.6);
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background: linear-gradient(90deg, #008040, #00ff80);
+            box-shadow: 0px 0px 15px rgba(0, 255, 128, 1);
+        }
+
+        /* Animación de resplandor */
+        @keyframes neonGlow {
+            0% {
+                box-shadow: 0 0 10px rgba(0, 255, 128, 0.6);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(0, 255, 128, 1);
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(0, 255, 128, 0.6);
+            }
+        }
+
+        /* Aplicando el efecto de neón al contenedor */
+        .contact-form-container {
+            animation: neonGlow 1.5s infinite alternate;
+        }
+}
     </style>
 </head>
 <body>
@@ -328,7 +432,7 @@
         </div>
     </section>
 
-    <section id="contacto">
+    <section id="contacto-juan">
             <div class="contact-form-container">
                 <h2 class="section-title">Contáctanos</h2>
                 <form id="contactForm" action="https://formspree.io/f/xjkgarra" method="POST">
