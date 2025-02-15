@@ -73,37 +73,23 @@
         }
 
         /* Hero Section */
-        .hero {
-    position: relative;
-    padding: 4rem 2rem;
-    text-align: center;
-    min-height: 100vh;
-    background-image: logo.jpeg;
-    background-size: 50%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #f5f5f5;
-}
+       .hero {
+            padding-top: clamp(60px, 10vh, 80px);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            background: linear-gradient(135deg, rgba(0,166,180,0.1) 0%, rgba(0,209,206,0.1) 100%);
+        }
 
-/* Esto crea un overlay semi-transparente que hace que el logo se vea más suave */
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.9); 
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
+        .hero-content {
+            text-align: center;
+            margin: clamp(1rem, 4vw, 2rem) 0;
+            padding: 0 clamp(1rem, 3vw, 2rem);
+            width: 100%;
+            max-width: 1400px;
+        }
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
