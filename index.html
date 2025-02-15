@@ -86,7 +86,7 @@
         }
 
         .hero::before {
-            content: '';
+            content: ";
             position: absolute;
             top: 0;
             left: 0;
@@ -169,7 +169,10 @@
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
-
+        .contact-12 {
+            padding: 5rem 2rem;
+            background-color: var(--white);
+        }
         /* Contact Section */
         .contact {
             padding: 5rem 2rem;
@@ -329,9 +332,9 @@
         </div>
     </section>
 
-    <section id="contacto">
+    <section class="contacto-12">
             <div class="contact-form-container">
-                <h2 class="section-title-juan">Contáctanos</h2>
+                <h2 class="section-title">Contáctanos</h2>
                 <form id="contactForm" action="https://formspree.io/f/xjkgarra" method="POST">
                     <div class="input-group">
                         <label for="name">Nombre Completo</label>
